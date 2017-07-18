@@ -1,0 +1,44 @@
+@color1: #333;
+@blue: #4da3e0;
+.proNav{
+  float: left;
+  width: 23%;
+  border-right: 1px solid #eee;
+  background-color: #fff;
+  line-height: 44px;
+  text-align: center;
+  p{
+    height: 44px;
+    font-size: 15px;
+    color: @color1;
+  }
+  .classify1{
+    &>li{
+      border-bottom: 1px solid #eee;
+    }
+    &>li.active{
+      p{
+        color: @blue
+      }
+      .classify2{
+        max-height: 1000px;
+        .cur{
+          color: @blue;
+          background: url('../../static/images/shuxian.png') no-repeat 6px 13px;
+          background-size: 3px 19px;
+        }
+      }
+    }
+  }
+  .classify2{
+    max-height: 0;
+    overflow: hidden;
+    transition: min-height .3s ease-out 0s;
+    &>li{
+      height: 44px;
+      border-top: 1px solid #eee;
+      font-size: 14px;
+    }
+  }
+
+}

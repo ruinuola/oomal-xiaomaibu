@@ -1,0 +1,31 @@
+@border_color1: #ddd;
+@border_color2: #f45d64;
+@color1:#333333;
+@color2:#999999;
+@color2:#666666;
+.nav{
+  height: 39px;
+  line-height: 39px;
+  font-size: 15px;
+  text-align: center;
+  color: @color2;
+  background-color: #fff;
+  width: 100%;
+  overflow: hidden;
+  li{
+    width: 33.3%;
+    height: 100%;
+    padding-bottom: 1px;
+    float: left;
+    border-bottom: 1px solid @border_color1;
+    border-right: 1px solid @border_color1;
+  }
+  &>li:last-child{
+    border-right: none;
+  }
+  li.active{
+    color: @color1;
+    padding-bottom: 0;
+    border-bottom: 2px solid @border_color2;
+  }
+}

@@ -1,0 +1,186 @@
+@border_color1: #ddd;
+@color1:#333;
+@color2:#999;
+@color3:#666;
+@color4:#888;
+@red:#f45d64;
+@blue:#4da3e0;
+.info{
+  width: 100%;
+  padding: 0 3.72%;
+  background-color: #fff;
+  border-bottom: 1px solid @border_color1;
+}
+.info1{
+  padding-top: 12px;
+  padding-bottom: 12px;
+  position: relative;
+  border-bottom: none;
+  h1{
+    line-height: 30px;
+    font-size: 23px;
+    font-weight: normal;
+    color: @color1;
+    span{
+      font-size: 12px;
+      color: @color2;
+    }
+  }
+  h4{
+    line-height: 24px;
+    font-size: 17px;
+    font-weight: normal;
+    color: @color3;
+  }
+  p{
+    font-size: 13px;
+    position: absolute;
+    right: 3.72%;
+    top: 50%;
+    transform: tranlateY(-50%);
+  }
+}
+.info2{
+  padding-bottom: 12px;
+  line-height: 20px;
+  font-size: 14px;
+  color: @color4;
+}
+.info3{
+  padding: 0;
+  font-size: 15px;
+  .btn{
+    height: 49px;
+    line-height: 49px;
+    padding: 0 3.72%;
+  }
+  .zhankai{
+    max-height: 0px;
+    padding: 0 3.72%;
+    font-size: 14px;
+    line-height: 28px;
+    transition:  max-height 0.5s ease-out 0s;
+    overflow: hidden;
+    ul{
+      padding-top: 12px;
+      padding-bottom: 12px;
+      margin-bottom: 12px;
+      border-bottom: 1px solid @border_color1;
+    }
+    li{
+      span{
+        display: inline-block;
+      }
+      .float-right{
+        height: 28px;
+      }
+    }
+    .name{
+      width: 55.6%;
+    }
+    .num{
+      width: 14.4%;
+      color: @color2;
+      text-align: center;
+    }
+    .other_price{
+      padding-bottom: 12px;
+    }
+    .total{
+      font-size: 15px;
+    }
+    .peiSong, .man_jian, .new_jian{
+      color: @color2;
+    }
+  }
+  .redTxt{
+    margin-left: 5px;
+  }
+}
+.info4, .info5{
+  height: 49px;
+  line-height: 49px;
+  padding: 0 3.72%;
+  font-size: 15px;
+}
+.info5{
+  .reason{
+    margin-left: 0.2rem;
+    color: @color3;
+  }
+}
+.btns{
+  width: 100%;
+  height: 52px;
+  font-size: 15px;
+  border-bottom: none;
+  button{
+    margin-top: 0;
+    margin-left: 0.17rem;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .blueBtn{
+    width: 2.2rem;
+    height: 35px;
+    line-height: 35px;
+    color: #fff;
+    background-color: #4da3e0;
+  }
+  .baiBtn{
+    width: 2.18rem;
+    height: 34px;
+    background-color: #fff;
+    border: 1px solid #bbb;
+    color: #666;
+  }
+}
+.orderInfo{
+  padding: 10px 3.72% 14px;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: right;
+  color: @color2;
+}
+.redTxt{
+  color: @red;
+}
+.blueTxt{
+  color: @blue;
+}
+.red_bg, .green_bg{
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  line-height: 18px;
+  font-size: 12px;
+  font-style: normal;
+  text-align: center;
+  color: #fff;
+  margin-right: 0.1rem
+}
+.red_bg{
+  background-color: @red;
+}
+.green_bg{
+  background-color: #14b545;
+}
+.icon-order, .icon-shifu, .icon-refund{
+  width: 16px;
+  height: 19px;
+  margin-right: 0.1rem;
+  position: relative;
+  top: 4px;
+}
+.icon-to_bottom{
+  width: 13px;
+  height: 13px;
+  background-position: center bottom;
+}
+.icon-shifu,.icon-refund{
+  width: 18px;
+  height: 18px;
+  top: 3px;
+}
+

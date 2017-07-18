@@ -1,0 +1,62 @@
+form.pro_des{
+  margin: 0;
+  padding:  0 0.3rem;
+  .expandingArea{
+    width: 100%;
+    min-height: 80px;
+    margin-top: 20px;
+    position: relative;
+    textarea{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-size: 13px;
+      line-height: 18px;
+      background-color: transparent;
+    }
+  }
+  p{
+    margin-top: 20px;
+  }
+  img{
+    width: 100%;
+    margin-top: 20px;
+  }
+  .btn{
+    width: 100%;
+    height: 49px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    button,.addImg{
+      width: 50%;
+      height: 49px;
+      margin-top: 0;
+      display: inline-block;
+      line-height: 1;
+      font-size: 18px;
+      border-radius: 0;
+    }
+    .addImg{
+      position: relative;
+      input[type=file]{
+        width: 100%;
+        height: 49px;
+        position: absolute;
+        z-index: 10;
+        opacity: 0;
+      }
+      button{
+        width: 100%;
+        background-color: #fff;
+        color: #4da3e0;
+      }
+    }
+    .submit{
+      background-color: #4da3e0;
+      color: #fff;
+    }
+  }
+}

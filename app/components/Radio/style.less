@@ -1,0 +1,37 @@
+.ui-radio{
+  height: 32px;
+  line-height: 32px;
+  font-size: 15px;
+  color: #666;
+  position: relative;
+  input[type=radio]{
+    width: 18px;
+    height: 18px;
+    border-radius: 0.1rem;
+    border: 1px solid #999;
+    position: relative;
+    top: 4px;
+    z-index: 10;
+    opacity: 0;
+  }
+  .radio-body{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border-radius: 0.1rem;
+    border: 1px solid #999;
+    position: absolute;
+    top: 7px;
+    left: 0;
+  }
+  .radio-text{
+    margin-left: 5px;
+  }
+}
+.ui-radio.on{
+  .radio-body{
+    border: none;
+    background: url('../../static/images/radio.png') center;
+    background-size: cover;
+  }
+}

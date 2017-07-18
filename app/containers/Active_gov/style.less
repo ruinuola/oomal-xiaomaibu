@@ -1,0 +1,133 @@
+@blue: #4da3e0;
+#man_zeng,#man_jian{
+  .crea_act{
+    width: 100%;
+    height: 41px;
+    line-height: 41px;
+    padding: 0 3.72%;
+    font-size: 13px;
+    background-color: #fff;
+    margin-bottom: 5px;
+    a{
+      color: #666;
+    }
+    .red_txt {
+      margin: 0 2px;
+    }
+    .icon{
+      width: 20px;
+      height: 13px;
+      position: relative;
+      top: 1px;
+    }
+  }
+}
+
+#man_zeng,#new_zeng,#man_bao,#man_jian{
+  form.content{
+    margin: 0;
+  }
+  .form-block{
+    width: 100%;
+    padding: 13px 3.72%;
+    margin-bottom: 5px;
+    background-color: #fff;
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+    font-size: 13px;
+    color: #666666;
+    span.name{
+      display: inline-block;
+      width: 52px;
+      text-align: right;
+      margin-right: 13px;
+    }
+    input{
+      height: 35px;
+      padding: 0 8px;
+      background-color: #f9f9f9;
+      border: 1px solid #d2d2d2;
+      border-radius: 4px;
+    }
+    .time1{
+      margin-left: 0;
+    }
+  }
+  &>.form-block:first-child{
+    border-top: none;
+  }
+  .btns{
+    width: 100%;
+    height: 49px;
+    position: fixed;
+    bottom: 0;
+    button{
+      width: 50%;
+      height: 100%;
+      font-size: 18px;
+      display: inline-block;
+      margin: 0;
+      border-radius: 0;
+    }
+  }
+}
+#man_zeng{
+  .man, .time{
+    input{
+      width: 105px;
+      margin: 0 10px;
+    }
+  }
+  .zeng, .stock{
+    input{
+      width: 4.8rem
+    }
+  }
+  .btns{
+    button[type=reset]{
+      background-color: #fff;
+      color: #999;
+    }
+    button.save{
+      color: #fff;
+      background-color: @blue;
+    }
+  }
+}
+#new_zeng, #man_bao, #man_jian{
+  input{
+    width: 105px;
+  }
+  p{
+    margin-bottom: 12px;
+    color: #333;
+  }
+  .jiange{
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+  }
+  button.save{
+    width: 100%;
+    color: #fff;
+    background-color: @blue;
+    top: 0;
+    transform: translateY(0);
+  }
+}
+.pl8{
+  padding-left: 8px;
+}
+#man_jian{
+  .btns{
+    button[type=reset]{
+      background-color: #fff;
+      color: #999;
+    }
+    button.save{
+      width: 50%;
+      color: #fff;
+      background-color: @blue;
+    }
+  }
+}

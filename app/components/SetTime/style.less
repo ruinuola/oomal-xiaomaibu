@@ -1,0 +1,109 @@
+@color1: #999;
+@color2: #555;
+@color3: #333;
+@border_color1: #ddd;
+@blue:#4da3e0;
+.setTime{
+  padding: 20px 0 0;
+  p{
+    height: 36px;
+    line-height: 36px;
+    font-size: 12px;
+    color: @color1;
+    padding: 0 3.72%;
+  }
+  li{
+    height: 40px;
+    line-height: 40px;
+    padding: 0 3.72%;
+    font-size: 14px;
+    color: @color2;
+    background-color: #fff;
+    border-bottom: 1px solid @border_color1;
+  }
+  ul li:last-child{
+    border-bottom: none;
+  }
+  button{
+    width: 92.56%;
+    margin: 36px auto 0;
+    background-color: @blue;
+  }
+  .icon-del{
+    width: 18px;
+    height: 18px;
+    background-position: right;
+    position: relative;
+    top: 11px;
+  }
+}
+//弹框
+#tan1{
+  display: none;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding-top: 15px;
+  background-color: #fff;
+  line-height: 45px;
+  transition: transform 0.3s ease-out 0s;
+  .zhanshi{
+    width: 4rem;
+    margin: 0 auto;
+    color: #333;
+  }
+  .icon-time_jiange{
+    display: inline-block;
+    width: 0.4rem;
+    height: 14px;
+    margin: 0 0.1rem;
+  }
+  input{
+    width: 0.8rem;
+    height: 39px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    padding: 0 0.1rem;
+    background-color: #f9f9f9;
+    line-height: 24px;
+    border: 1px solid #ddd;
+  }
+  span{
+    display: inline-block;
+    background-color: #f9f9f9;
+    height: 39px;
+    line-height: 39px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+    top: -1px;
+  }
+  .input1, .input2{
+    display: inline-block;
+    &>input:first-child{
+      border-right: none;
+      border-bottom-left-radius: 0.1rem;
+      border-top-left-radius: 0.1rem;
+      text-align: right;
+    }
+    &>input:last-child{
+      border-left: none;
+      border-bottom-right-radius: 0.1rem;
+      border-top-right-radius: 0.1rem;
+      text-align: left;
+    }
+  }
+  button{
+    width: 70%;
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #4da3e0;
+    border-radius: 0;
+    border-radius: 0.1rem;
+  }
+}
